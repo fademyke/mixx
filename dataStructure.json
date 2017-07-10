@@ -1,0 +1,52 @@
+Relationships {
+
+  "Legend": {
+    "one-to-one": "<->",
+    "one-to-many": "<-x",
+    "many-to-one": "x->",
+    "many-to-many": "x-x",
+  },
+
+  "Relations": {
+    "Person-to-Preference": "<->",
+  },
+
+}
+
+
+Tables should be capitalized like "This";
+Primary Key fields should be capitalized like "ID_THIS";
+Foreign Key fields should be capitalized like "id_this" or "id_thisandthat";
+Regular fields should be capitalized in camel case like "this" or "likeThis";
+
+
+Mix: {
+
+  "Person": {
+    "ID_PERSON": "PERS1000000000001",
+    "id_preferences": "PREF1000000000001",
+    "username": "user",
+    "password": "pass",
+  },
+
+  "Preferences": {
+    "ID_PREFERENCES": "PREF1000000000001",
+    "id_person": "PERS1000000000001",
+    "keywords": "jav ; overwatch ; anime ; dick",
+
+    "_COMMENTS": "We should store all the tags, or keywords, that a user is interested in inside a single 'Keywords' field."
+  },
+
+  "Keywords": {
+    "ID_KEYWORDS": "KYWD1000000000001",
+    "key": "jav: 12",
+
+    "_COMMENTS": "For keywords that we are keeping a record count of, we should give each individual word its own entity/record inside the 'Keywords' table",
+  },
+
+  "Chatroom": {
+    "ID_CHATROOM": "CHRM1000000000001",
+    "keywords": "jav ; overwatch ; douggy",
+  },
+
+}
