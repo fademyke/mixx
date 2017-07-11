@@ -1,9 +1,24 @@
-- user greeted by login or go anon
-  - login -> search bar + recommended + start a room(tagless)
-  - anon -> search bar + what's hot + start a room(tagless)
-- Search bar with auto-complete keyword suggestions
-  - search -> list available chat rooms + start a room
-    - sorted by similarity of current users in room to user
+- UX map alpha
+  - User greeted by login or go anon
+    - login -> search bar + recommended + start a room(tagless)
+    - anon -> search bar + what's hot + start a room(tagless)
+  - Search bar with auto-complete keyword suggestions
+    - search -> list available chat rooms + start a room(tags)
+      - sorted by similarity of current users in room to user
+  - Join small twitch chat like room to chat in
 
-- auto kick after 3 identical messages
-  - 3 auto kicks ban account
+
+- Dynamic tagging
+  - frequency of words above a certain threshold creates tag
+    - (?) auto-group vote to add new tag/remove dormant tag
+    - pronouns count for a previous word/string
+    - client side message parsing
+      - (?) load balanced over the clients in the chatroom
+  - relatively dormant tags get removed
+    - (?) retain count so they can be re-tagged more easily
+
+
+- Automated moderation
+  - auto kick after 3 identical messages
+    - 3 auto kicks ban account
+  - (?) username filter
