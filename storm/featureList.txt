@@ -1,34 +1,34 @@
 - UX map alpha
-  - User greeted by login or go anon
+  - User greeted by login/register or go anon
     - login -> search bar + recommended + start a room(tagless)
+    - register -> username + password + (?) interest keyword(s)
+      - back to L/RA page on confirm
     - anon -> search bar + what's hot + start a room(tagless)
   - Search bar with auto-complete keyword suggestions
     - search -> list available chat rooms + start a room(tags)
       - sorted by similarity of current users in room to user
-<<<<<<< HEAD
   - Join small twitch chat like room to chat in
+    - (?) room titled by tags
+    - (?) user list part of the ui
+    - user interest updated with tags of chosen room
+  - Friend request other users
+    - invite friends to non-full rooms
 
 
 - Dynamic tagging
   - frequency of words above a certain threshold creates tag
+    - user interests updated with tag
+      - (?) leaving quickly after new tag -> decrease interest
     - (?) auto-group vote to add new tag/remove dormant tag
+      - (?) vote yes -> increase interest
     - pronouns count for a previous word/string
     - client side message parsing
       - (?) load balanced over the clients in the chatroom
   - relatively dormant tags get removed
     - (?) retain count so they can be re-tagged more easily
 
-=======
-
-- Dynamic tagging
-  - frequency of words above a certain threshold creates tag
-    - pronouns count for a previous word/string
->>>>>>> 1233cdc48748f3513b63f32666d1bd9b4ea4329c
 
 - Automated moderation
   - auto kick after 3 identical messages
     - 3 auto kicks ban account
-<<<<<<< HEAD
   - (?) username filter
-=======
->>>>>>> 1233cdc48748f3513b63f32666d1bd9b4ea4329c
