@@ -1,9 +1,15 @@
-- user greeted by login or go anon
-  - login -> search bar + recommended + start a room(tagless)
-  - anon -> search bar + what's hot + start a room(tagless)
-- Search bar with auto-complete keyword suggestions
-  - search -> list available chat rooms + start a room
-    - sorted by similarity of current users in room to user
+- UX map alpha
+  - User greeted by login or go anon
+    - login -> search bar + recommended + start a room(tagless)
+    - anon -> search bar + what's hot + start a room(tagless)
+  - Search bar with auto-complete keyword suggestions
+    - search -> list available chat rooms + start a room(tags)
+      - sorted by similarity of current users in room to user
 
-- auto kick after 3 identical messages
-  - 3 auto kicks ban account
+- Dynamic tagging
+  - frequency of words above a certain threshold creates tag
+    - pronouns count for a previous word/string
+
+- Automated moderation
+  - auto kick after 3 identical messages
+    - 3 auto kicks ban account
